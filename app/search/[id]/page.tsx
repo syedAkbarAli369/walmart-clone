@@ -2,7 +2,6 @@
 
 
 "use client"
-import { useSearchParams } from "next/navigation"
 import Image from "next/image";
 import { GridCategory, gridData } from "@/lib/data";
 import { use } from "react";
@@ -25,8 +24,8 @@ const Page = ({ params }: Props) => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-center justify-center">
                 {
-                    items.map((item) => (
-                        <div className="border border-gray-300 p-3 ">
+                    items.map((item, index) => (
+                        <div key={index} className="border border-gray-300 p-3 ">
                             <div className="flex items-center justify-center mb-2">
                                 <Image src={item.image} alt="test" width={360} height={360} className="h-63"/>
                             </div>

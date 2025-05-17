@@ -3,7 +3,7 @@
 import { Grid2X2, Heart, LayoutGrid, Moon, Search, ShoppingCart, Sun, User } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { FormEvent, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import {useRouter} from "next/navigation"
 
 
